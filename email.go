@@ -24,13 +24,17 @@ type Email struct {
 	Subject       string                 `json:",omitempty"`
 	Tag           string                 `json:",omitempty"`
 	TemplateID    int                    `json:",omitempty"`
+	TemplateAlias string                 `json:",omitempty"`
 	TemplateModel map[string]interface{} `json:",omitempty"`
+	InlineCss     bool                   `json:",omitempty"`
 	HTMLBody      string                 `json:",omitempty"`
 	TextBody      string                 `json:",omitempty"`
 	ReplyTo       string                 `json:",omitempty"`
 	Headers       []EmailHeader          `json:",omitempty"`
 	Attachments   []EmailAttachment      `json:",omitempty"`
 	TrackOpens    bool                   `json:",omitempty"`
+	TrackLinks    bool                   `json:",omitempty"`
+	Metadata      interface{}            `json:",omitempty"`
 }
 
 // EmailHeader represents the values for an email header.
