@@ -12,7 +12,7 @@ This is an unofficial library that is not affiliated with [Postmark](http://post
 Installation
 -----------------
 
-`go get -u github.com/mattevans/postmark-go`
+`go get -u github.com/rhomber/postmark-go`
 
 Setup
 -----------------
