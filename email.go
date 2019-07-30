@@ -66,7 +66,7 @@ func (s *EmailService) Send(emailRequest *Email) (*EmailResponse, *Response, err
 
 	// If we have a template ID, use the Postmark template API endpoint.
 	requestPath := emailAPIPath
-	if emailRequest.TemplateID != 0 {
+	if emailRequest.TemplateID != 0 || emailRequest.TemplateAlias != "" {
 		requestPath = emailWithTemplateAPIPath
 	}
 
